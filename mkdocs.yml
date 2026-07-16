@@ -1,0 +1,89 @@
+site_name: Back To Engineering
+site_url: https://www.backtoengineering.com/
+site_description: Learn robotics and AI through a dependency tree of topics and hands-on projects.
+
+theme:
+  name: material
+  logo: assets/branding/Back To Engineering logo_I-5.png
+  favicon: assets/branding/Back To Engineering logo_I-1.png
+  palette:
+    scheme: slate
+    primary: black
+    accent: green
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - header.autohide
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+
+
+hooks:
+  - scripts/hooks.py
+
+extra_css:
+  - css/custom.css
+
+nav:
+  - Home: index.md
+  - Core:
+    - Curiosity: topics/curiosity.md
+  - Electronics:
+    - Electronics Fundamentals: topics/electronics-fundamentals.md
+    - Circuits: topics/circuits.md
+  - Mechanical:
+    - Mechanical Fundamentals: topics/mechanical-fundamentals.md
+    - CAD: topics/cad.md
+    - 3D Printing: topics/3d-printing.md
+    - Soldering: topics/soldering.md
+  - Programming:
+    - Variables & Types: topics/python-variables.md
+    - Loops & Functions: topics/python-loops.md
+    - Classes & OOP: topics/python-classes.md
+    - Python Basics: topics/python-basics.md
+    - Topics, Services & Actions: topics/ros2-communication.md
+    - Packages & Launch Files: topics/ros2-packages-launch.md
+    - C++ Basics: topics/cpp-basics.md
+    - CPU Basics: topics/GPU.md
+    - CUDA Basics: topics/cuda-basics.md
+    - Data Fundamentals: topics/data-fundamentals.md
+    - ROS 2 Basics: topics/ros2-basics.md
+  - Data Science:
+    - Statistics & Modelling: topics/statistics-modelling.md
+  - AI & ML:
+    - ML Fundamentals: topics/ml-fundamentals.md
+    - Neural Networks: topics/neural-networks.md
+    - Computer Vision: topics/computer-vision.md
+    - NLP: topics/nlp.md
+    - LLMs: topics/llms.md
+    - RAG: topics/rag.md
+    - AI Agents & MCP: topics/ai-agents.md
+    - TensorRT Optimization: topics/tensorrt.md
+    - DeepStream SDK: topics/deepstream.md
+    - Simulation (Isaac Sim): topics/simulation.md
+    - Robot Kinematics: topics/kinematics.md
+    - SLAM: topics/slam.md
+    - VLA: topics/vla.md
+  - Projects:
+    - Blink an LED: projects/blink-led.md
+    - Sensor Station: projects/sensor-station.md
+    - Build a Robot Arm: projects/robot-arm.md
+    - Open Duck Mini Robot: projects/open-duck.md
+    - Quadruped Robot Dog: projects/robot-dog.md
+    - SO-101 Arm: projects/so101.md
+    - Autonomous Robot Car: projects/robot-car.md
+
+
+not_in_nav: |
+  tree/index.html
+
+exclude_docs: |
+  assets/*.md

@@ -1,0 +1,9 @@
+.venv/
+.idea/
+site/
+__pycache__/
+*.py[cod]
+
+mkdocs-serve.*.log
+.DS_Store
+Thumbs.db

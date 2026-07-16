@@ -1,0 +1,969 @@
+{
+  "nodes": [
+    {
+      "data": {
+        "id": "3d-printing",
+        "label": "3D Printing",
+        "type": "topic",
+        "category": "mechanical",
+        "icon": "printer",
+        "group": null,
+        "blurb": "Turning CAD models into physical parts: slicing, tolerances, and materials.",
+        "videoCount": 0,
+        "tier": 2,
+        "prereqCount": 1,
+        "url": "topics/3d-printing/"
+      }
+    },
+    {
+      "data": {
+        "id": "ai-agents",
+        "label": "AI Agents & MCP",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "plug-connected",
+        "group": "agentic-AI",
+        "blurb": "Agents that use tools, and the Model Context Protocol that connects them to the world.",
+        "videoCount": 1,
+        "tier": 12,
+        "prereqCount": 1,
+        "url": "topics/ai-agents/"
+      }
+    },
+    {
+      "data": {
+        "id": "cad",
+        "label": "CAD",
+        "type": "topic",
+        "category": "mechanical",
+        "icon": "vector",
+        "group": null,
+        "blurb": "Designing parts on screen before they exist. Sketches, constraints, and assemblies.",
+        "videoCount": 0,
+        "tier": 3,
+        "prereqCount": 1,
+        "url": "topics/cad/"
+      }
+    },
+    {
+      "data": {
+        "id": "circuits",
+        "label": "Circuits",
+        "type": "topic",
+        "category": "electronics",
+        "icon": "cpu",
+        "group": null,
+        "blurb": "Breadboards, LEDs, buttons, and why shorting things is bad. Where theory meets smoke.",
+        "videoCount": 0,
+        "tier": 2,
+        "prereqCount": 1,
+        "url": "topics/circuits/"
+      }
+    },
+    {
+      "data": {
+        "id": "computer-vision",
+        "label": "Computer Vision",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "eye",
+        "group": "data-science",
+        "blurb": "Cameras, OpenCV, CNNs: turning pixels into decisions.",
+        "videoCount": 0,
+        "tier": 9,
+        "prereqCount": 1,
+        "url": "topics/computer-vision/"
+      }
+    },
+    {
+      "data": {
+        "id": "cpp-basics",
+        "label": "C++ Basics",
+        "type": "topic",
+        "category": "programming",
+        "icon": "code",
+        "group": null,
+        "blurb": "The compiler, the terminal, and runtime: what Python hides from you, C++ makes you face.",
+        "videoCount": 0,
+        "tier": 5,
+        "prereqCount": 1,
+        "url": "topics/cpp-basics/"
+      }
+    },
+    {
+      "data": {
+        "id": "cuda-basics",
+        "label": "CUDA Basics",
+        "type": "topic",
+        "category": "programming",
+        "icon": "bolt",
+        "group": "nvidia-ecosystem",
+        "blurb": "CUDA (Compute Unified Device Architecture) enables parallel computing on NVIDIA GPUs for accelerated AI and scientific computing.",
+        "videoCount": 0,
+        "tier": 7,
+        "prereqCount": 1,
+        "url": "topics/cuda-basics/"
+      }
+    },
+    {
+      "data": {
+        "id": "curiosity",
+        "label": "Curiosity",
+        "type": "topic",
+        "category": "core",
+        "icon": "sparkles",
+        "group": null,
+        "blurb": "The only true prerequisite. Everything in this tree unlocks from wanting to know how things work.",
+        "videoCount": 0,
+        "tier": 0,
+        "prereqCount": 0,
+        "url": "topics/curiosity/"
+      }
+    },
+    {
+      "data": {
+        "id": "data-fundamentals",
+        "label": "Data Fundamentals",
+        "type": "topic",
+        "category": "data-science",
+        "icon": "database",
+        "group": "data-science",
+        "blurb": "Data structures, cleaning messy data, and the algorithms that process it.",
+        "videoCount": 2,
+        "tier": 5,
+        "prereqCount": 1,
+        "url": "topics/data-fundamentals/"
+      }
+    },
+    {
+      "data": {
+        "id": "deepstream",
+        "label": "DeepStream SDK",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "video",
+        "group": "nvidia-ecosystem",
+        "blurb": "NVIDIA DeepStream SDK is a framework for building AI-powered video analytics applications with optimized multi-stream processing.",
+        "videoCount": 0,
+        "tier": 10,
+        "prereqCount": 2,
+        "url": "topics/deepstream/"
+      }
+    },
+    {
+      "data": {
+        "id": "electronics-fundamentals",
+        "label": "Electronics Fundamentals",
+        "type": "topic",
+        "category": "electronics",
+        "icon": "bolt",
+        "group": null,
+        "blurb": "Current, voltage, resistance, power, ground, and batteries: what electricity actually does in a circuit.",
+        "videoCount": 0,
+        "tier": 1,
+        "prereqCount": 1,
+        "url": "topics/electronics-fundamentals/"
+      }
+    },
+    {
+      "data": {
+        "id": "gpu",
+        "label": "GPUs",
+        "type": "topic",
+        "category": "programming",
+        "icon": "cpu-2",
+        "group": "nvidia-ecosystem",
+        "blurb": "GPU = Graphics Processing Unit Learn how parallel processing can be more efficient than serial processing (CPUs). Robotics has a lot to learn from gaming.",
+        "videoCount": 0,
+        "tier": 6,
+        "prereqCount": 1,
+        "url": "topics/GPU/"
+      }
+    },
+    {
+      "data": {
+        "id": "kinematics",
+        "label": "Robot Kinematics",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "angle",
+        "group": null,
+        "blurb": "Kinematics studies the motion of robot manipulators without considering forces, covering forward and inverse kinematics for position control.",
+        "videoCount": 0,
+        "tier": 5,
+        "prereqCount": 2,
+        "url": "topics/kinematics/"
+      }
+    },
+    {
+      "data": {
+        "id": "llms",
+        "label": "LLMs",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "message-chatbot",
+        "group": "agentic-AI",
+        "blurb": "Large language models: prompting, context windows, and their limits.",
+        "videoCount": 1,
+        "tier": 10,
+        "prereqCount": 1,
+        "url": "topics/llms/"
+      }
+    },
+    {
+      "data": {
+        "id": "mechanical-fundamentals",
+        "label": "Mechanical Fundamentals",
+        "type": "topic",
+        "category": "mechanical",
+        "icon": "settings",
+        "group": null,
+        "blurb": "Gears, screw sizes, fasteners, and the physical vocabulary of building machines.",
+        "videoCount": 0,
+        "tier": 1,
+        "prereqCount": 1,
+        "url": "topics/mechanical-fundamentals/"
+      }
+    },
+    {
+      "data": {
+        "id": "ml-fundamentals",
+        "label": "ML Fundamentals",
+        "type": "topic",
+        "category": "data-science",
+        "icon": "chart-dots",
+        "group": "data-science",
+        "blurb": "Regression, classification, and training/validation/test splits: learning from data properly.",
+        "videoCount": 0,
+        "tier": 7,
+        "prereqCount": 1,
+        "url": "topics/ml-fundamentals/"
+      }
+    },
+    {
+      "data": {
+        "id": "neural-networks",
+        "label": "Neural Networks",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "topology-star-3",
+        "group": "data-science",
+        "blurb": "From perceptrons to CNNs: the architecture behind modern AI.",
+        "videoCount": 0,
+        "tier": 8,
+        "prereqCount": 1,
+        "url": "topics/neural-networks/"
+      }
+    },
+    {
+      "data": {
+        "id": "nlp",
+        "label": "NLP",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "language",
+        "group": null,
+        "blurb": "From tokens to transformers: how machines process language.",
+        "videoCount": 0,
+        "tier": 9,
+        "prereqCount": 1,
+        "url": "topics/nlp/"
+      }
+    },
+    {
+      "data": {
+        "id": "python-basics",
+        "label": "Python Basics",
+        "type": "topic",
+        "category": "programming",
+        "icon": "brand-python",
+        "group": "python-foundations",
+        "blurb": "Variables, functions, loops, classes, and OOP. Your first and most-used language in this tree.",
+        "videoCount": 0,
+        "tier": 4,
+        "prereqCount": 1,
+        "url": "topics/python-basics/"
+      }
+    },
+    {
+      "data": {
+        "id": "python-classes",
+        "label": "Classes & OOP",
+        "type": "topic",
+        "category": "programming",
+        "icon": "hierarchy",
+        "group": "python-foundations",
+        "blurb": "Bundling data with behavior: classes, objects, and methods.",
+        "videoCount": 0,
+        "tier": 3,
+        "prereqCount": 1,
+        "url": "topics/python-classes/"
+      }
+    },
+    {
+      "data": {
+        "id": "python-loops",
+        "label": "Loops & Functions",
+        "type": "topic",
+        "category": "programming",
+        "icon": "repeat",
+        "group": "python-foundations",
+        "blurb": "Repetition and reuse: for, while, and defining your own functions.",
+        "videoCount": 0,
+        "tier": 2,
+        "prereqCount": 1,
+        "url": "topics/python-loops/"
+      }
+    },
+    {
+      "data": {
+        "id": "python-variables",
+        "label": "Variables & Types",
+        "type": "topic",
+        "category": "programming",
+        "icon": "variable",
+        "group": "python-foundations",
+        "blurb": "Names, values, and types: the first bricks of every program.",
+        "videoCount": 0,
+        "tier": 1,
+        "prereqCount": 1,
+        "url": "topics/python-variables/"
+      }
+    },
+    {
+      "data": {
+        "id": "rag",
+        "label": "RAG",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "message-chatbot",
+        "group": "agentic-AI",
+        "blurb": "RAG = retrieval-augmented generation",
+        "videoCount": 1,
+        "tier": 11,
+        "prereqCount": 1,
+        "url": "topics/rag/"
+      }
+    },
+    {
+      "data": {
+        "id": "ros2-basics",
+        "label": "ROS 2 Basics",
+        "type": "topic",
+        "category": "programming",
+        "icon": "topology-star",
+        "group": "ros-ecosystem",
+        "blurb": "Robot Operating System 2 (ROS 2) is a flexible framework for writing robot software with improved real-time performance and multi-robot support.",
+        "videoCount": 0,
+        "tier": 6,
+        "prereqCount": 2,
+        "url": "topics/ros2-basics/"
+      }
+    },
+    {
+      "data": {
+        "id": "ros2-communication",
+        "label": "Topics, Services & Actions",
+        "type": "topic",
+        "category": "programming",
+        "icon": "arrows-exchange",
+        "group": "ros-ecosystem",
+        "blurb": "The three ways ROS 2 nodes talk: streams, requests, and long-running goals.",
+        "videoCount": 0,
+        "tier": 7,
+        "prereqCount": 1,
+        "url": "topics/ros2-communication/"
+      }
+    },
+    {
+      "data": {
+        "id": "ros2-packages-launch",
+        "label": "Packages & Launch Files",
+        "type": "topic",
+        "category": "programming",
+        "icon": "package",
+        "group": "ros-ecosystem",
+        "blurb": "Structuring, building, and starting multi-node ROS 2 systems with colcon and launch.",
+        "videoCount": 0,
+        "tier": 7,
+        "prereqCount": 1,
+        "url": "topics/ros2-packages-launch/"
+      }
+    },
+    {
+      "data": {
+        "id": "simulation",
+        "label": "Simulation (Isaac Sim)",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "world",
+        "group": "nvidia-ecosystem",
+        "blurb": "Test robots in physics-accurate virtual worlds before touching hardware.",
+        "videoCount": 0,
+        "tier": 7,
+        "prereqCount": 2,
+        "url": "topics/simulation/"
+      }
+    },
+    {
+      "data": {
+        "id": "slam",
+        "label": "SLAM",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "map-2",
+        "group": null,
+        "blurb": "SLAM enables robots to build a map of an unknown environment while simultaneously tracking their location within it.",
+        "videoCount": 0,
+        "tier": 10,
+        "prereqCount": 2,
+        "url": "topics/slam/"
+      }
+    },
+    {
+      "data": {
+        "id": "soldering",
+        "label": "Soldering",
+        "type": "topic",
+        "category": "mechanical",
+        "icon": "world",
+        "group": null,
+        "blurb": "Knowledge: - Soldering Iron - Flux - Removing flux - Electrical tape and heat suction",
+        "videoCount": 0,
+        "tier": 2,
+        "prereqCount": 1,
+        "url": "topics/soldering/"
+      }
+    },
+    {
+      "data": {
+        "id": "statistics-modelling",
+        "label": "Statistics & Modelling",
+        "type": "topic",
+        "category": "data-science",
+        "icon": "chart-histogram",
+        "group": "data-science",
+        "blurb": "Hypotheses, models, and knowing when your data is lying to you.",
+        "videoCount": 0,
+        "tier": 6,
+        "prereqCount": 1,
+        "url": "topics/statistics-modelling/"
+      }
+    },
+    {
+      "data": {
+        "id": "tensorrt",
+        "label": "TensorRT Optimization",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "rocket",
+        "group": "nvidia-ecosystem",
+        "blurb": "NVIDIA TensorRT is a high-performance deep learning inference optimizer and runtime for production deployment.",
+        "videoCount": 0,
+        "tier": 9,
+        "prereqCount": 2,
+        "url": "topics/tensorrt/"
+      }
+    },
+    {
+      "data": {
+        "id": "vla",
+        "label": "VLA Models",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "robot-face",
+        "group": null,
+        "blurb": "Vision-Language-Action models: where AI meets physical robots.",
+        "videoCount": 0,
+        "tier": 11,
+        "prereqCount": 2,
+        "url": "topics/vla/"
+      }
+    },
+    {
+      "data": {
+        "id": "blink-led",
+        "label": "Project: Blink an LED",
+        "type": "project",
+        "category": "electronics",
+        "icon": "bulb",
+        "group": null,
+        "blurb": "The hello world of physical computing: make an LED blink from code on a microcontroller.",
+        "videoCount": 1,
+        "tier": 5,
+        "prereqCount": 2,
+        "url": "projects/blink-led/"
+      }
+    },
+    {
+      "data": {
+        "id": "open-duck",
+        "label": "Open Duck Mini Robot",
+        "type": "project",
+        "category": "ai-ml",
+        "icon": "feather",
+        "group": null,
+        "blurb": "Build an open-source AI-powered mini robot based on the Open Duck platform - a mobile robot with vision and language capabilities.",
+        "videoCount": 1,
+        "tier": 13,
+        "prereqCount": 5,
+        "url": "projects/open-duck/"
+      }
+    },
+    {
+      "data": {
+        "id": "robot-arm",
+        "label": "Build a Robot Arm",
+        "type": "project",
+        "category": "ai-ml",
+        "icon": "robot",
+        "group": null,
+        "blurb": "Build a robot arm from scratch, progressing from cardboard prototypes to 3D-printed designs with AI-powered control using LeRobot.",
+        "videoCount": 1,
+        "tier": 7,
+        "prereqCount": 6,
+        "url": "projects/robot-arm/"
+      }
+    },
+    {
+      "data": {
+        "id": "robot-car",
+        "label": "Autonomous Robot Car",
+        "type": "project",
+        "category": "ai-ml",
+        "icon": "car",
+        "group": null,
+        "blurb": "Build a self-driving car capable of lane detection, obstacle avoidance, and autonomous navigation using computer vision and SLAM.",
+        "videoCount": 1,
+        "tier": 11,
+        "prereqCount": 4,
+        "url": "projects/robot-car/"
+      }
+    },
+    {
+      "data": {
+        "id": "robot-dog",
+        "label": "Quadruped Robot Dog",
+        "type": "project",
+        "category": "ai-ml",
+        "icon": "dog",
+        "group": null,
+        "blurb": "Build a four-legged robot dog capable of dynamic walking, running, and adaptive terrain navigation using advanced kinematics and gait control.",
+        "videoCount": 1,
+        "tier": 8,
+        "prereqCount": 5,
+        "url": "projects/robot-dog/"
+      }
+    },
+    {
+      "data": {
+        "id": "sensor-station",
+        "label": "Sensor Station",
+        "type": "project",
+        "category": "electronics",
+        "icon": "antenna",
+        "group": null,
+        "blurb": "Read the physical world: wire up sensors (temperature, distance, IMU), stream their readings into Python, and visualize live data. The graduation step between making an output (blinking an LED) and making a system that s\u2026",
+        "videoCount": 1,
+        "tier": 6,
+        "prereqCount": 2,
+        "url": "projects/sensor-station/"
+      }
+    },
+    {
+      "data": {
+        "id": "so101",
+        "label": "SO-101 Arm",
+        "type": "project",
+        "category": "ai-ml",
+        "icon": "hand-grab",
+        "group": null,
+        "blurb": "Manipulation driven by learned policies: teleoperate the SO-101 arm, collect demonstration datasets, train imitation-learning policies, and run them on real hardware.",
+        "videoCount": 1,
+        "tier": 12,
+        "prereqCount": 1,
+        "url": "projects/so101/"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "data": {
+        "source": "mechanical-fundamentals",
+        "target": "3d-printing"
+      }
+    },
+    {
+      "data": {
+        "source": "rag",
+        "target": "ai-agents"
+      }
+    },
+    {
+      "data": {
+        "source": "3d-printing",
+        "target": "cad"
+      }
+    },
+    {
+      "data": {
+        "source": "electronics-fundamentals",
+        "target": "circuits"
+      }
+    },
+    {
+      "data": {
+        "source": "neural-networks",
+        "target": "computer-vision"
+      }
+    },
+    {
+      "data": {
+        "source": "python-basics",
+        "target": "cpp-basics"
+      }
+    },
+    {
+      "data": {
+        "source": "gpu",
+        "target": "cuda-basics"
+      }
+    },
+    {
+      "data": {
+        "source": "python-basics",
+        "target": "data-fundamentals"
+      }
+    },
+    {
+      "data": {
+        "source": "computer-vision",
+        "target": "deepstream"
+      }
+    },
+    {
+      "data": {
+        "source": "tensorrt",
+        "target": "deepstream"
+      }
+    },
+    {
+      "data": {
+        "source": "curiosity",
+        "target": "electronics-fundamentals"
+      }
+    },
+    {
+      "data": {
+        "source": "cpp-basics",
+        "target": "gpu"
+      }
+    },
+    {
+      "data": {
+        "source": "mechanical-fundamentals",
+        "target": "kinematics"
+      }
+    },
+    {
+      "data": {
+        "source": "python-basics",
+        "target": "kinematics"
+      }
+    },
+    {
+      "data": {
+        "source": "nlp",
+        "target": "llms"
+      }
+    },
+    {
+      "data": {
+        "source": "curiosity",
+        "target": "mechanical-fundamentals"
+      }
+    },
+    {
+      "data": {
+        "source": "statistics-modelling",
+        "target": "ml-fundamentals"
+      }
+    },
+    {
+      "data": {
+        "source": "ml-fundamentals",
+        "target": "neural-networks"
+      }
+    },
+    {
+      "data": {
+        "source": "neural-networks",
+        "target": "nlp"
+      }
+    },
+    {
+      "data": {
+        "source": "python-classes",
+        "target": "python-basics"
+      }
+    },
+    {
+      "data": {
+        "source": "python-loops",
+        "target": "python-classes"
+      }
+    },
+    {
+      "data": {
+        "source": "python-variables",
+        "target": "python-loops"
+      }
+    },
+    {
+      "data": {
+        "source": "curiosity",
+        "target": "python-variables"
+      }
+    },
+    {
+      "data": {
+        "source": "llms",
+        "target": "rag"
+      }
+    },
+    {
+      "data": {
+        "source": "python-basics",
+        "target": "ros2-basics"
+      }
+    },
+    {
+      "data": {
+        "source": "cpp-basics",
+        "target": "ros2-basics"
+      }
+    },
+    {
+      "data": {
+        "source": "ros2-basics",
+        "target": "ros2-communication"
+      }
+    },
+    {
+      "data": {
+        "source": "ros2-basics",
+        "target": "ros2-packages-launch"
+      }
+    },
+    {
+      "data": {
+        "source": "ros2-basics",
+        "target": "simulation"
+      }
+    },
+    {
+      "data": {
+        "source": "gpu",
+        "target": "simulation"
+      }
+    },
+    {
+      "data": {
+        "source": "computer-vision",
+        "target": "slam"
+      }
+    },
+    {
+      "data": {
+        "source": "statistics-modelling",
+        "target": "slam"
+      }
+    },
+    {
+      "data": {
+        "source": "mechanical-fundamentals",
+        "target": "soldering"
+      }
+    },
+    {
+      "data": {
+        "source": "data-fundamentals",
+        "target": "statistics-modelling"
+      }
+    },
+    {
+      "data": {
+        "source": "ml-fundamentals",
+        "target": "tensorrt"
+      }
+    },
+    {
+      "data": {
+        "source": "neural-networks",
+        "target": "tensorrt"
+      }
+    },
+    {
+      "data": {
+        "source": "computer-vision",
+        "target": "vla"
+      }
+    },
+    {
+      "data": {
+        "source": "llms",
+        "target": "vla"
+      }
+    },
+    {
+      "data": {
+        "source": "circuits",
+        "target": "blink-led"
+      }
+    },
+    {
+      "data": {
+        "source": "python-basics",
+        "target": "blink-led"
+      }
+    },
+    {
+      "data": {
+        "source": "ros2-basics",
+        "target": "open-duck"
+      }
+    },
+    {
+      "data": {
+        "source": "3d-printing",
+        "target": "open-duck"
+      }
+    },
+    {
+      "data": {
+        "source": "computer-vision",
+        "target": "open-duck"
+      }
+    },
+    {
+      "data": {
+        "source": "llms",
+        "target": "open-duck"
+      }
+    },
+    {
+      "data": {
+        "source": "so101",
+        "target": "open-duck"
+      }
+    },
+    {
+      "data": {
+        "source": "circuits",
+        "target": "robot-arm"
+      }
+    },
+    {
+      "data": {
+        "source": "python-basics",
+        "target": "robot-arm"
+      }
+    },
+    {
+      "data": {
+        "source": "mechanical-fundamentals",
+        "target": "robot-arm"
+      }
+    },
+    {
+      "data": {
+        "source": "3d-printing",
+        "target": "robot-arm"
+      }
+    },
+    {
+      "data": {
+        "source": "kinematics",
+        "target": "robot-arm"
+      }
+    },
+    {
+      "data": {
+        "source": "sensor-station",
+        "target": "robot-arm"
+      }
+    },
+    {
+      "data": {
+        "source": "ros2-basics",
+        "target": "robot-car"
+      }
+    },
+    {
+      "data": {
+        "source": "computer-vision",
+        "target": "robot-car"
+      }
+    },
+    {
+      "data": {
+        "source": "slam",
+        "target": "robot-car"
+      }
+    },
+    {
+      "data": {
+        "source": "circuits",
+        "target": "robot-car"
+      }
+    },
+    {
+      "data": {
+        "source": "ros2-basics",
+        "target": "robot-dog"
+      }
+    },
+    {
+      "data": {
+        "source": "kinematics",
+        "target": "robot-dog"
+      }
+    },
+    {
+      "data": {
+        "source": "3d-printing",
+        "target": "robot-dog"
+      }
+    },
+    {
+      "data": {
+        "source": "cpp-basics",
+        "target": "robot-dog"
+      }
+    },
+    {
+      "data": {
+        "source": "robot-arm",
+        "target": "robot-dog"
+      }
+    },
+    {
+      "data": {
+        "source": "blink-led",
+        "target": "sensor-station"
+      }
+    },
+    {
+      "data": {
+        "source": "data-fundamentals",
+        "target": "sensor-station"
+      }
+    },
+    {
+      "data": {
+        "source": "vla",
+        "target": "so101"
+      }
+    }
+  ]
+}
