@@ -37,7 +37,8 @@ extra_javascript:
   - js/site-analytics.js
 
 nav:
-  - Home: index.md
+  - Tree: index.html
+  - About: about.md
   - Core:
     - Curiosity: topics/curiosity.md
   - Electronics:
@@ -87,6 +88,7 @@ nav:
 
 
 not_in_nav: |
+  index.html
   tree/index.html
 
 exclude_docs: |

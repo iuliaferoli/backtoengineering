@@ -75,7 +75,7 @@ def _tree_link_block(page) -> str:
     return (
         "\n\n"
         f'<p class="tree-node-action"><a class="tree-node-link" '
-        f'href="/tree/?node={page_id}" '
+        f'href="/?node={page_id}" '
         f'data-umami-event="See in tree" '
         f'data-umami-event-node="{page_id}">See in tree &rarr;</a></p>\n'
     )
