@@ -1,9 +1,36 @@
-.venv/
-.idea/
-site/
+# Python
 __pycache__/
-*.py[cod]
+*.py[codz]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
 
+# Virtual environments and local env files
+.venv/
+venv/
+env/
+ENV/
+.env
+.envrc
+
+# Build output
+build/
+dist/
+site/
+
+# MkDocs local server logs
 mkdocs-serve.*.log
+
+# Editor and OS files
+.idea/
+.vscode/
 .DS_Store
 Thumbs.db
+tempCodeRunnerFile.py
