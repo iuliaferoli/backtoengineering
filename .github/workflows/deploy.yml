@@ -17,6 +17,10 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      UMAMI_SCRIPT_URL: ${{ vars.UMAMI_SCRIPT_URL }}
+      UMAMI_WEBSITE_ID: ${{ vars.UMAMI_WEBSITE_ID }}
+      UMAMI_DOMAINS: ${{ vars.UMAMI_DOMAINS }}
     steps:
       - uses: actions/checkout@v4
 
@@ -33,6 +37,9 @@ jobs:
 
       - name: Build tech tree graph (fails on broken prerequisites)
         run: uv run python scripts/build_graph.py
+
+      - name: Configure analytics
+        run: uv run python scripts/write_analytics_config.py
 
       - name: Build site
         run: uv run mkdocs build --strict

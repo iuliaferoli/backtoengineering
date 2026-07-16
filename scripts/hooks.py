@@ -54,7 +54,10 @@ def _next_nodes_block(page) -> str:
         target_url = "/" + node["url"].lstrip("/")
         kind = "project" if node["type"] == "project" else "topic"
         links.append(
-            f'<a class="next-node {kind}" href="{target_url}">'
+            f'<a class="next-node {kind}" href="{target_url}" '
+            f'data-umami-event="Next node" '
+            f'data-umami-event-node="{successor_id}" '
+            f'data-umami-event-type="{kind}">'
             f'{node["label"]} &rarr;</a>'
         )
 
@@ -72,7 +75,9 @@ def _tree_link_block(page) -> str:
     return (
         "\n\n"
         f'<p class="tree-node-action"><a class="tree-node-link" '
-        f'href="/tree/?node={page_id}">See in tree &rarr;</a></p>\n'
+        f'href="/tree/?node={page_id}" '
+        f'data-umami-event="See in tree" '
+        f'data-umami-event-node="{page_id}">See in tree &rarr;</a></p>\n'
     )
 
 

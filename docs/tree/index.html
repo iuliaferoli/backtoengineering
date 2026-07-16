@@ -317,6 +317,8 @@
   <a class="read" id="i-read" href="#">Read more →</a>
 </aside>
 
+<script src="../js/analytics-config.js"></script>
+<script src="../js/site-analytics.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/elkjs@0.9.3/lib/elk.bundled.js"></script>
 <script>
 (async function () {
@@ -455,6 +457,9 @@
     const el = document.createElement("a");
     el.className = "node" + (d.type === "project" ? " project" : "");
     el.href = BASE + d.url;
+    el.dataset.nodeId = d.id;
+    el.dataset.nodeType = d.type;
+    el.dataset.nodeCategory = d.category;
     el.style.cssText = `left:${p.x}px; top:${p.y}px; width:${p.w}px; height:${p.h}px; --cat:${cssVar(d.category)};`;
     const meta = d.type === "project"
       ? `${d.prereqCount} prereqs`
@@ -560,8 +565,17 @@
     document.getElementById("i-blurb").textContent = d.blurb || "";
     chipList(document.getElementById("i-prereqs"), prereqsOf[id]);
     chipList(document.getElementById("i-unlocks"), unlocksOf[id]);
-    document.getElementById("i-read").href = BASE + d.url;
+    const readLink = document.getElementById("i-read");
+    readLink.href = BASE + d.url;
+    readLink.dataset.nodeId = id;
     info.classList.add("open");
+    if (window.umami && typeof window.umami.track === "function") {
+      window.umami.track("Tree node opened", {
+        node: id,
+        type: d.type,
+        category: d.category
+      });
+    }
   }
   function closeInfo() {
     info.classList.remove("open");

@@ -61,3 +61,20 @@ at the top of the file.
 
 Repo Settings -> Pages -> Source: "GitHub Actions". Then update
 `site_url` in `mkdocs.yml` to your real URL.
+
+## Analytics
+
+The site supports Umami analytics without requiring credentials for
+local builds. Create a site in Umami, then add these GitHub repository
+variables under Settings -> Secrets and variables -> Actions -> Variables:
+
+```text
+UMAMI_SCRIPT_URL=https://your-umami-host.example/script.js
+UMAMI_WEBSITE_ID=your-website-id
+UMAMI_DOMAINS=www.backtoengineering.com,backtoengineering.com
+```
+
+When those variables are present, the deploy workflow injects the Umami
+tracker into the built pages. The site also sends custom events for
+tree navigation, next-node clicks, external links, video interactions,
+and tree node detail opens.

@@ -32,6 +32,10 @@ hooks:
 extra_css:
   - css/custom.css
 
+extra_javascript:
+  - js/analytics-config.js
+  - js/site-analytics.js
+
 nav:
   - Home: index.md
   - Core:
