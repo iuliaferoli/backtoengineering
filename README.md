@@ -123,3 +123,5 @@ This project uses two licenses:
 In short: you're free to use, adapt, and build on this project for
 non-commercial purposes with attribution. Commercial use of the content is not
 permitted. The curated links point to third-party resources, which remain under their own licenses.
+
+First-time contributors sign a CLA on the PR (one click, you keep ownership). Why: the map stays free and open source forever; the CLA keeps future paid features like progress tracking possible without chasing every past contributor.
