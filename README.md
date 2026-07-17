@@ -33,12 +33,7 @@ Check out the [Robot Arm Project](projects/robot-arm.md) to see the full journey
 
 ---
 
-<a href="/" style="display: block; text-decoration: none; border: 1px solid rgba(95,191,130,0.4); border-radius: 12px; padding: 2rem; text-align: center; background: linear-gradient(135deg, rgba(95,191,130,0.08), transparent);">
-  <span style="display: block; font-size: 1.4rem; font-weight: 600; margin-bottom: 0.4rem;">Open the Tech Tree →</span>
-  <span style="display: block; opacity: 0.75;">30 topics and projects, from Curiosity to a walking robot dog. Full screen, Civ-style.</span>
-</a>
-
-
+[![Explore the Tech Tree](/docs/img/tree.png)](https://www.backtoengineering.com/)
 
 
 ## Local development
