@@ -1,12 +1,9 @@
-# Robotics & AI Tech Tree
-
-A static learning site: topics and hands-on projects arranged in a
-dependency tree. Built with MkDocs Material, Cytoscape.js, and one
-small Python script. Deploys to GitHub Pages on every push.
-
 # Your Journey To Physical AI
 
 Welcome to **Back To Engineering**! This is your roadmap from curiosity to building intelligent robots. Whether you're coming from software, AI/ML, or starting fresh, this tech tree organizes everything you need to learn robotics and physical AI in 2026.
+
+
+[![Explore the Tech Tree](/docs/img/tree.png)](https://www.backtoengineering.com/)
 
 ## How This Works
 
@@ -33,8 +30,12 @@ Check out the [Robot Arm Project](projects/robot-arm.md) to see the full journey
 
 ---
 
-[![Explore the Tech Tree](/docs/img/tree.png)](https://www.backtoengineering.com/)
 
+# Robotics & AI Tech Tree
+
+A static learning site: topics and hands-on projects arranged in a
+dependency tree. Built with MkDocs Material, Cytoscape.js, and one
+small Python script. Deploys to GitHub Pages on every push.
 
 ## Local development
 
