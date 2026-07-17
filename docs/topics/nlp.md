@@ -3,6 +3,7 @@ id: nlp
 title: "NLP"
 type: topic
 category: ai-ml
+group: data-science
 tree_icon: language
 prerequisites: [neural-networks]
 ---

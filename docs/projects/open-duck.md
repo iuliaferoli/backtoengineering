@@ -4,7 +4,7 @@ title: "Open Duck Mini Robot"
 type: project
 category: ai-ml
 tree_icon: feather
-prerequisites: [ros2-basics, 3d-printing, computer-vision, llms, so101]
+prerequisites: [ros2-basics, computer-vision, llms, so101]
 videos:
   - https://youtu.be/tt-g_fi-eGU?si=r6lqTbvP3p-ZZeSv
 ---
@@ -19,30 +19,27 @@ Open Duck Mini is a compact, open-source robotics platform designed for AI exper
 - Mobile navigation
 - Computer vision processing
 - Language model integration (VLA capabilities)
-- ROS 2 architecture
 
 ## What You'll Build
 
 - Assemble the Open Duck Mini hardware platform
-- Configure ROS 2 navigation stack
-- Integrate camera sensors for vision tasks
-- Deploy vision-language-action (VLA) models
-- Create autonomous behaviors with LLM guidance
+- Integrate the sensors for balancing (IMU), vision tasks (camera), sound (speaker).
+- Make the duck balance and walk with the default policy
+- Change the policy in simulation
 
 ## Required Knowledge
 
-- ROS 2 ecosystem (nodes, topics, launch files)
 - 3D printing (for custom parts/modifications)
+- Soldering for the electrical circuitry
+- Assembly for the mechanical parts (servo motors, 3D parts, using screws, heat inserts, etc)
 - Computer vision fundamentals (camera calibration, object detection)
-- LLM integration and prompt engineering
-- Linux system administration
 
 ## Hardware Components
 
 - Open Duck Mini chassis and electronics
-- Camera module (depth or RGB)
-- Embedded compute (Raspberry Pi or Jetson Nano)
-- Motor controllers and wheels
+- Camera and sensor modules (
+- Embedded compute (Raspberry Pi 0)
+- Servos
 - Power management system
 
 ## Resources

@@ -1,4 +1,4 @@
-"""MkDocs hook: embed YouTube videos and append tech-tree successor links.
+"""MkDocs hook: embed media and append tech-tree successor links.
 
 Add to any page's frontmatter:
 
@@ -7,14 +7,22 @@ Add to any page's frontmatter:
       - https://www.youtube.com/watch?v=abc123
       - https://www.youtube.com/playlist?list=PL...
 
+    images:
+      - src: img/example.png
+        alt: Short description of the image
+        caption: Optional caption shown below the image
+
 Players render wherever the page body contains the marker
 `<!-- videos -->`; without a marker they appear in a "Watch"
-section appended at the end. Non-YouTube URLs render as plain
-links. The single `video:` key (one URL) also works.
+section appended at the end. Images render at `<!-- images -->`;
+without a marker they appear in an "Images" section appended after
+the page body. Non-YouTube URLs render as plain links. The single
+`video:` and `image:` keys also work.
 
 Registered in mkdocs.yml via:  hooks: [scripts/hooks.py]
 """
 
+from html import escape
 import json
 from functools import lru_cache
 from pathlib import Path
@@ -109,6 +117,47 @@ def _player(url: str) -> str:
     )
 
 
+def _page_relative_url(page, src: str) -> str:
+    """Return a URL from the current page to a docs-relative asset."""
+    if src.startswith(("http://", "https://", "/", "#")):
+        return src
+    depth = len([part for part in page.url.split("/") if part])
+    return ("../" * depth) + src.lstrip("/")
+
+
+def _image_figure(image, page) -> str:
+    if isinstance(image, str):
+        src = image
+        alt = ""
+        caption = ""
+    elif isinstance(image, dict):
+        src = image.get("src") or image.get("url") or image.get("path") or ""
+        alt = image.get("alt") or image.get("title") or ""
+        caption = image.get("caption") or ""
+    else:
+        return ""
+
+    if not src:
+        return ""
+
+    url = _page_relative_url(page, str(src))
+    figure = (
+        '<figure class="image-figure">'
+        f'<img src="{escape(url, quote=True)}" alt="{escape(str(alt), quote=True)}" loading="lazy">'
+    )
+    if caption:
+        figure += f'<figcaption>{escape(str(caption))}</figcaption>'
+    return figure + "</figure>"
+
+
+def _images_block(images, page) -> str:
+    figures = [_image_figure(image, page) for image in images]
+    figures = [figure for figure in figures if figure]
+    if not figures:
+        return ""
+    return '<div class="image-gallery" markdown>\n' + "\n".join(figures) + "\n</div>\n"
+
+
 def on_page_markdown(markdown, page, config, files):
     meta = page.meta or {}
     videos = meta.get("videos") or ([meta["video"]] if meta.get("video") else [])
@@ -119,4 +168,12 @@ def on_page_markdown(markdown, page, config, files):
             markdown = markdown.replace(marker, block)
         else:
             markdown = markdown + "\n\n## Watch\n\n" + block + "\n"
+    images = meta.get("images") or ([meta["image"]] if meta.get("image") else [])
+    if isinstance(images, list) and images:
+        block = _images_block(images, page)
+        marker = "<!-- images -->"
+        if block and marker in markdown:
+            markdown = markdown.replace(marker, block)
+        elif block:
+            markdown = markdown + "\n\n## Images\n\n" + block
     return markdown + _tree_link_block(page) + _next_nodes_block(page)

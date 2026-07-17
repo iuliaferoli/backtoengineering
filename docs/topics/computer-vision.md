@@ -16,3 +16,8 @@ Cameras, OpenCV, CNNs: turning pixels into decisions.
 
 - Detect an object in a live camera feed
 - Explain the difference between classification and detection
+
+## Resources
+
+- [OpenCV Tutorials](https://docs.opencv.org/5.0/intro.html)
+- [HuggingFace Computer Vision Tutorial](https://huggingface.co/learn/computer-vision-course/en/unit0/welcome/welcome)

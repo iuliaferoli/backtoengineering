@@ -264,6 +264,19 @@
     transition: color 0.15s, border-color 0.15s;
   }
   #docs-link:hover { color: var(--text); border-color: var(--accent); }
+  #coffee-link {
+    top: 24px; right: 100px;
+    color: #f5d381; text-decoration: none; font-size: 12px;
+    border: 1px solid rgba(245, 185, 66, 0.5);
+    background: var(--panel);
+    padding: 8px 14px; border-radius: 8px;
+    transition: color 0.15s, border-color 0.15s, transform 0.15s;
+  }
+  #coffee-link:hover {
+    color: #ffe3a3;
+    border-color: #f5b942;
+    transform: translateY(-1px);
+  }
   #legend {
     bottom: 40px; left: 24px;
     display: flex; flex-wrap: wrap; gap: 6px 14px;
@@ -323,6 +336,13 @@
       padding: 7px 10px;
       font-size: 11px;
     }
+    #coffee-link {
+      top: auto;
+      right: calc(14px + env(safe-area-inset-right));
+      bottom: calc(86px + env(safe-area-inset-bottom));
+      padding: 7px 10px;
+      font-size: 11px;
+    }
     #info {
       top: auto;
       left: calc(12px + env(safe-area-inset-left));
@@ -360,6 +380,7 @@
   </div>
 </div>
 <a class="hud" id="docs-link" href="about/">About</a>
+<a class="hud" id="coffee-link" href="https://buymeacoffee.com/backtoengineering" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
 <div class="hud" id="legend"></div>
 <div class="hud" id="zoom">
   <button id="z-in" aria-label="Zoom in">+</button>

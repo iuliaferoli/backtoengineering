@@ -5,7 +5,7 @@ type: topic
 category: ai-ml
 tree_icon: rocket
 group: nvidia-ecosystem
-prerequisites: [ml-fundamentals, neural-networks]
+prerequisites: [tensors]
 ---
 
 # TensorRT Optimization

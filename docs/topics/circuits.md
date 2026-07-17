@@ -16,3 +16,7 @@ Breadboards, LEDs, buttons, and why shorting things is bad. Where theory meets s
 - Build a working LED circuit with the right resistor on a breadboard
 - Explain what a short circuit is and how you accidentally make one
 - Read a simple schematic and reproduce it physically
+
+## Resources
+
+- [Circuits 101](https://www.circuitbread.com/tutorials/series/circuits-101)

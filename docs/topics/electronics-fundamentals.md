@@ -16,3 +16,7 @@ Current, voltage, resistance, power, ground, and batteries: what electricity act
 - Explain Ohm's law with a real example
 - Tell power and ground apart on a schematic
 - Pick a battery for a given voltage and capacity need
+
+## Resources
+
+- [Circuits 101](https://www.circuitbread.com/tutorials/series/circuits-101)

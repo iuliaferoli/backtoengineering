@@ -21,3 +21,7 @@ system that senses and reacts.
 1. One sensor wired and read reliably from code
 2. Readings logged and plotted over time
 3. A threshold triggers a physical output
+
+## Iulia's Hardware picks
+- [Arduino starter kit](https://amzn.to/458MMrG)
+- [Raspberry Pico Starter Kit](https://amzn.to/4aWZL34)

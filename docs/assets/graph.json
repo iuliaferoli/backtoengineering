@@ -8,7 +8,7 @@
         "category": "mechanical",
         "icon": "printer",
         "group": null,
-        "blurb": "Turning CAD models into physical parts: slicing, tolerances, and materials.",
+        "blurb": "Turning CAD models into physical parts: slicing, tolerances, and materials. You can find loads of open source STL files to download and print at home.",
         "videoCount": 0,
         "tier": 2,
         "prereqCount": 1,
@@ -145,7 +145,7 @@
         "group": "nvidia-ecosystem",
         "blurb": "NVIDIA DeepStream SDK is a framework for building AI-powered video analytics applications with optimized multi-stream processing.",
         "videoCount": 0,
-        "tier": 10,
+        "tier": 11,
         "prereqCount": 2,
         "url": "topics/deepstream/"
       }
@@ -262,7 +262,7 @@
         "type": "topic",
         "category": "ai-ml",
         "icon": "language",
-        "group": null,
+        "group": "data-science",
         "blurb": "From tokens to transformers: how machines process language.",
         "videoCount": 0,
         "tier": 9,
@@ -428,7 +428,7 @@
         "category": "mechanical",
         "icon": "world",
         "group": null,
-        "blurb": "Knowledge: - Soldering Iron - Flux - Removing flux - Electrical tape and heat suction",
+        "blurb": "Heating up metals to join them together.",
         "videoCount": 0,
         "tier": 2,
         "prereqCount": 1,
@@ -460,9 +460,24 @@
         "group": "nvidia-ecosystem",
         "blurb": "NVIDIA TensorRT is a high-performance deep learning inference optimizer and runtime for production deployment.",
         "videoCount": 0,
+        "tier": 10,
+        "prereqCount": 1,
+        "url": "topics/tensorrt/"
+      }
+    },
+    {
+      "data": {
+        "id": "tensors",
+        "label": "Tensors",
+        "type": "topic",
+        "category": "ai-ml",
+        "icon": "rocket",
+        "group": "data-science",
+        "blurb": "Multidimensional arrays of numbers. Think scalar, vector, matrix, then tensors!",
+        "videoCount": 2,
         "tier": 9,
         "prereqCount": 2,
-        "url": "topics/tensorrt/"
+        "url": "topics/tensors/"
       }
     },
     {
@@ -488,7 +503,7 @@
         "category": "electronics",
         "icon": "bulb",
         "group": null,
-        "blurb": "The hello world of physical computing: make an LED blink from code on a microcontroller.",
+        "blurb": "The hello world of physical computing: make an LED blink from code on a microcontroller. You can connect the LED directly to power and ground, using a resistance in the circuit to keep the voltage low enough not to explo\u2026",
         "videoCount": 1,
         "tier": 5,
         "prereqCount": 2,
@@ -506,7 +521,7 @@
         "blurb": "Build an open-source AI-powered mini robot based on the Open Duck platform - a mobile robot with vision and language capabilities.",
         "videoCount": 1,
         "tier": 13,
-        "prereqCount": 5,
+        "prereqCount": 4,
         "url": "projects/open-duck/"
       }
     },
@@ -533,7 +548,7 @@
         "category": "ai-ml",
         "icon": "car",
         "group": null,
-        "blurb": "Build a self-driving car capable of lane detection, obstacle avoidance, and autonomous navigation using computer vision and SLAM.",
+        "blurb": "Build a self-driving car capable of lane detection, obstacle avoidance, and autonomous navigation using computer vision and SLAM. There are levels of difficulty and complexity you can choose from. For example, you can st\u2026",
         "videoCount": 1,
         "tier": 11,
         "prereqCount": 4,
@@ -793,14 +808,20 @@
     },
     {
       "data": {
-        "source": "ml-fundamentals",
+        "source": "tensors",
         "target": "tensorrt"
       }
     },
     {
       "data": {
+        "source": "ml-fundamentals",
+        "target": "tensors"
+      }
+    },
+    {
+      "data": {
         "source": "neural-networks",
-        "target": "tensorrt"
+        "target": "tensors"
       }
     },
     {
@@ -830,12 +851,6 @@
     {
       "data": {
         "source": "ros2-basics",
-        "target": "open-duck"
-      }
-    },
-    {
-      "data": {
-        "source": "3d-printing",
         "target": "open-duck"
       }
     },

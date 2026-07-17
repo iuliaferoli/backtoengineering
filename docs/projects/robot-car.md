@@ -5,12 +5,15 @@ type: project
 category: ai-ml
 tree_icon: car
 prerequisites: [ros2-basics, computer-vision, slam, circuits]
-video: https://www.youtube.com/playlist?list=PLA91EvK7Dr_uZfC8QRWU6ETB3tA66958w
+videos:
+  - https://youtu.be/qnDjWk76ga4?si=riFWUbloxcVtlkat
 ---
 
 # Autonomous Robot Car
 
 Build a self-driving car capable of lane detection, obstacle avoidance, and autonomous navigation using computer vision and SLAM.
+There are levels of difficulty and complexity you can choose from. For example, you can start with a simple car kit that follows a line, or implement your own navigation with LiDAR.
+You can start small and build complexity as you get more comfortable with the concepts.
 
 ## Project Overview
 
@@ -54,6 +57,9 @@ A robot car combines wheeled mobility with vision-based autonomy, making it an i
 ## Resources
 
 - [Microcontroller Basics Playlist - Back To Engineering](https://www.youtube.com/playlist?list=PLA91EvK7Dr_uZfC8QRWU6ETB3tA66958w)
-- [DonkeyCar Documentation](https://docs.donkeycar.com/)
 - [JetBot GitHub](https://github.com/NVIDIA-AI-IOT/jetbot)
 - [F1/10 Autonomous Racing](https://f1tenth.org/)
+
+## Iulia's Hardware Picks
+- [Elegoo Smart Car Kit](https://amzn.to/4fzATS1)
+- [Adruino starter kit](https://amzn.to/458MMrG)

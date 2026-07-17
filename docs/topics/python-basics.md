@@ -17,3 +17,9 @@ Variables, functions, loops, classes, and OOP. Your first and most-used language
 - Write a class with methods and use it from another file
 - Read a traceback and find the failing line
 - Work comfortably in a virtual environment
+
+## Resources
+
+- [Python Docs Tutorials](https://docs.python.org/3/tutorial/index.html)
+- [W3School Python Tutorial](https://www.w3schools.com/python/python_intro.asp)
+- [Python Tutorial](https://www.pythontutorial.net/)

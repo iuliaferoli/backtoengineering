@@ -33,6 +33,7 @@ extra_css:
   - css/custom.css
 
 extra_javascript:
+  - js/coffee-link.js
   - js/analytics-config.js
   - js/site-analytics.js
 
@@ -71,6 +72,7 @@ nav:
     - LLMs: topics/llms.md
     - RAG: topics/rag.md
     - AI Agents & MCP: topics/ai-agents.md
+    - Tensors: topics/tensors.md
     - TensorRT Optimization: topics/tensorrt.md
     - DeepStream SDK: topics/deepstream.md
     - Simulation (Isaac Sim): topics/simulation.md

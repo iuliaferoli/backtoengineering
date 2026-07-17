@@ -55,3 +55,8 @@ Quadruped robots represent a significant step up in complexity from wheeled plat
 - [Stanford Pupper](https://stanfordstudentrobotics.org/pupper)
 - [Spot Micro GitHub](https://github.com/mike4192/spotMicro)
 - [Quadruped Kinematics Tutorial](https://www.researchgate.net/publication/332374021_Inverse_Kinematic_Analysis_Of_A_Quadruped_Robot)
+
+## Iulia's Hardware Picks
+- [Smart Dog Kit](https://amzn.to/45847B3)
+- [Arduino starter kit](https://amzn.to/458MMrG) 
+- [Raspberry Pico Starter Kit](https://amzn.to/4aWZL34)
