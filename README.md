@@ -1,4 +1,4 @@
-# Your Journey To Physical AI
+﻿# Your Journey To Physical AI
 
 Welcome to **Back To Engineering**! This is your roadmap from curiosity to building intelligent robots. Whether you're coming from software, AI/ML, or starting fresh, this tech tree organizes everything you need to learn robotics and physical AI in 2026.
 
@@ -12,7 +12,7 @@ This isn't a traditional course - it's a **choose-your-own-adventure learning pa
 - **Click any topic card** to explore concepts, watch tutorials, and find resources
 - **Follow the arrows** - they show prerequisites (what you need to know first)
 - **Star-shaped nodes** are hands-on projects where theory meets reality
-- **Color-coded by discipline** - Electronics 🟡, Mechanical ⚪, Programming 🟢, Data Science 🟣, AI & ML 🔴
+- **Color-coded by discipline** - Core `#7aa2f7`, Electronics `#f5b942`, Mechanical `#93a8b4`, Programming `#5fbf82`, Data Science `#b48ce6`, AI & ML `#f26d6d`
 - **Scroll to zoom** and drag to pan around the graph
 - **Hover over nodes** to see prerequisite connections glow
 

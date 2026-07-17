@@ -27,6 +27,9 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.snippets:
+      base_path:
+        - docs/includes
   - pymdownx.superfences
 
 
@@ -37,12 +40,19 @@ extra_css:
   - css/custom.css
 
 extra_javascript:
-  - js/coffee-link.js
+  - js/header-social.js
   - js/analytics-config.js
   - js/site-analytics.js
 
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@backtoengineering
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/iuliaferoli/
+    - icon: fontawesome/solid/mug-saucer
+      link: https://buymeacoffee.com/backtoengineering
 
 nav:
   - Tree: index.html
@@ -102,3 +112,4 @@ not_in_nav: |
 
 exclude_docs: |
   assets/*.md
+  includes/*.md

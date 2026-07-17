@@ -23,6 +23,7 @@ You can find loads of open source STL files to download and print at home.
 - [Makerworld](https://makerworld.com/)
 - [Simple 3D arm model](https://cults3d.com/en/3d-model/gadget/grippy-bot)
 
-## Iulia's Hardware picks
+## Iulia's Hardware Picks
+--8<-- "affiliate-disclosure.md"
+
 - [Elegoo Centauri 2](https://eu.elegoo.com/products/centauri-carbon-2-combo?source=aw&utm_source=awin&utm_campaign=2859325&utm_medium=referral&sscid=61127_1784284247_bc78762d7f1341a1a2cb98e8d697ea03&sv1=affiliate&sv_campaign_id=2859325&awc=61127_1784284247_bc78762d7f1341a1a2cb98e8d697ea03)
-- 

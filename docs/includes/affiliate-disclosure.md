@@ -1,0 +1,1 @@
+*Some links below are affiliate links. As an Amazon Associate I earn from qualifying purchases. I may also earn a small commission from other links, at no extra cost to you, and I only list gear I actually use and recommend.*

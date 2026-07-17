@@ -80,7 +80,9 @@ Build a robot arm from scratch, progressing from cardboard prototypes to 3D-prin
 - [Robot Arm Playlist - Back To Engineering](https://www.youtube.com/playlist?list=PLA91EvK7Dr_t3BMHld1zLkzEQFPPG1A56)
 - [LeRobot Documentation](https://github.com/huggingface/lerobot)
 
-## Iulia's Hardware picks
+## Iulia's Hardware Picks
+--8<-- "affiliate-disclosure.md"
+
 - [Servos](https://amzn.to/4w9Iuw0)
 - [Raspberrry Pico Starter Kit](https://amzn.to/4aWZL34)
 - [SO101 Arms](https://www.seeedstudio.com/SO-ARM-101-Assembled-Kit-Pro-p-6691.html?sensecap_affiliate=7MEJBUq&referring_service=link)

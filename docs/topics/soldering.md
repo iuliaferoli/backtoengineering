@@ -19,9 +19,10 @@ Heating up metals to join them together.
 
 
 ## Resources
-- [How to solder](https://www.ifixit.com/News/6864/how-to-solder)S
+- [How to solder](https://www.ifixit.com/News/6864/how-to-solder)
 - [Soldering 101](https://www.instructables.com/Soldering-101-for-the-Beginner/)
 
 ## Iulia's Hardware Picks
+--8<-- "affiliate-disclosure.md"
 
 - [Soldering Iron](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)

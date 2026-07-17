@@ -255,27 +255,23 @@
   }
   #brand .name { font-family: Inter, sans-serif; font-weight: 600; font-size: 15px; }
   #brand .sub { font-size: 11px; letter-spacing: 0.2em; color: var(--text-dim); margin-top: 1px; }
-  #docs-link {
+  #top-links {
     top: 24px; right: 24px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  #top-links a {
     color: var(--text-dim); text-decoration: none; font-size: 12px;
     border: 1px solid var(--panel-border);
     background: var(--panel);
     padding: 8px 14px; border-radius: 8px;
     transition: color 0.15s, border-color 0.15s;
   }
-  #docs-link:hover { color: var(--text); border-color: var(--accent); }
-  #coffee-link {
-    top: 24px; right: 100px;
-    color: #f5d381; text-decoration: none; font-size: 12px;
-    border: 1px solid rgba(245, 185, 66, 0.5);
-    background: var(--panel);
-    padding: 8px 14px; border-radius: 8px;
-    transition: color 0.15s, border-color 0.15s, transform 0.15s;
-  }
-  #coffee-link:hover {
-    color: #ffe3a3;
-    border-color: #f5b942;
-    transform: translateY(-1px);
+  #top-links a:hover { color: var(--text); border-color: var(--accent); }
+  #top-links .icon-link {
+    width: 34px; height: 34px;
+    padding: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
   }
   #legend {
     bottom: 40px; left: 24px;
@@ -330,18 +326,19 @@
       top: calc(12px + env(safe-area-inset-top));
       left: calc(14px + env(safe-area-inset-left));
     }
-    #docs-link {
+    #top-links {
       top: calc(14px + env(safe-area-inset-top));
       right: calc(14px + env(safe-area-inset-right));
+      gap: 5px;
+    }
+    #top-links a {
       padding: 7px 10px;
       font-size: 11px;
     }
-    #coffee-link {
-      top: auto;
-      right: calc(14px + env(safe-area-inset-right));
-      bottom: calc(86px + env(safe-area-inset-bottom));
-      padding: 7px 10px;
-      font-size: 11px;
+    #top-links .icon-link {
+      width: 31px; height: 31px;
+      padding: 0;
+      font-size: 15px;
     }
     #info {
       top: auto;
@@ -379,8 +376,13 @@
     <div class="sub">PHYSICAL AI · TECH TREE</div>
   </div>
 </div>
-<a class="hud" id="docs-link" href="about/">About</a>
-<a class="hud" id="coffee-link" href="https://buymeacoffee.com/backtoengineering" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+<div class="hud" id="top-links">
+  <a href="about/">About</a>
+  <a href="https://github.com/iuliaferoli/backtoengineering" target="_blank" rel="noopener noreferrer">GitHub</a>
+  <a class="icon-link" href="https://www.youtube.com/@backtoengineering" target="_blank" rel="noopener noreferrer" aria-label="YouTube" title="YouTube"><i class="ti ti-brand-youtube"></i></a>
+  <a class="icon-link" href="https://www.linkedin.com/in/iuliaferoli/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+  <a class="icon-link" href="https://buymeacoffee.com/backtoengineering" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee" title="Buy me a coffee"><i class="ti ti-coffee"></i></a>
+</div>
 <div class="hud" id="legend"></div>
 <div class="hud" id="zoom">
   <button id="z-in" aria-label="Zoom in">+</button>

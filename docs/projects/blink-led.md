@@ -34,6 +34,7 @@ Breadboard layout for the blink circuit.
 - [Blink an LED Arduino Docs](https://docs.arduino.cc/built-in-examples/basics/Blink/)
 
 ## Iulia's Hardware Picks
+--8<-- "affiliate-disclosure.md"
+
 - [Arduino starter kit](https://amzn.to/458MMrG)
 - [Raspberry Pico Starter Kit](https://amzn.to/4aWZL34)
-

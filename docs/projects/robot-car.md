@@ -61,5 +61,7 @@ A robot car combines wheeled mobility with vision-based autonomy, making it an i
 - [F1/10 Autonomous Racing](https://f1tenth.org/)
 
 ## Iulia's Hardware Picks
+--8<-- "affiliate-disclosure.md"
+
 - [Elegoo Smart Car Kit](https://amzn.to/4fzATS1)
 - [Adruino starter kit](https://amzn.to/458MMrG)

@@ -22,6 +22,8 @@ system that senses and reacts.
 2. Readings logged and plotted over time
 3. A threshold triggers a physical output
 
-## Iulia's Hardware picks
+## Iulia's Hardware Picks
+--8<-- "affiliate-disclosure.md"
+
 - [Arduino starter kit](https://amzn.to/458MMrG)
 - [Raspberry Pico Starter Kit](https://amzn.to/4aWZL34)
