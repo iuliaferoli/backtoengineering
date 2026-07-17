@@ -111,3 +111,15 @@ When those variables are present, the deploy workflow injects the Umami
 tracker into the built pages. The site also sends custom events for
 tree navigation, next-node clicks, external links, video interactions,
 and tree node detail opens.
+
+## License
+
+This project uses two licenses:
+
+- **Code** (site, tree renderer, build scripts): [Apache License 2.0](LICENSE)
+- **Content** (the learning map, node and project descriptions, documentation):
+  [Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)](LICENSE-CONTENT.md)
+
+In short: you're free to use, adapt, and build on this project for
+non-commercial purposes with attribution. Commercial use of the content is not
+permitted. The curated links point to third-party resources, which remain under their own licenses.
