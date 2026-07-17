@@ -1,6 +1,9 @@
 site_name: Back To Engineering
 site_url: https://www.backtoengineering.com/
 site_description: Learn robotics and AI through a dependency tree of topics and hands-on projects.
+repo_url: https://github.com/iuliaferoli/backtoengineering
+repo_name: iuliaferoli/backtoengineering
+edit_uri: edit/main/docs/
 
 theme:
   name: material
@@ -18,6 +21,7 @@ theme:
     - navigation.top
     - search.suggest
     - header.autohide
+    - content.action.edit
 
 markdown_extensions:
   - admonition
@@ -36,6 +40,9 @@ extra_javascript:
   - js/coffee-link.js
   - js/analytics-config.js
   - js/site-analytics.js
+
+extra:
+  generator: false
 
 nav:
   - Tree: index.html

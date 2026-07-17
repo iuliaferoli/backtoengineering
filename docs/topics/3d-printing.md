@@ -19,8 +19,8 @@ You can find loads of open source STL files to download and print at home.
 
 ## Open source model repositories
 - [Thingiverse](https://www.thingiverse.com/)
-- [Printables](https://www.printables.com/
-- [Makerworld](https://makerworld.com/))
+- [Printables](https://www.printables.com/)
+- [Makerworld](https://makerworld.com/)
 - [Simple 3D arm model](https://cults3d.com/en/3d-model/gadget/grippy-bot)
 
 ## Iulia's Hardware picks
