@@ -27,6 +27,8 @@ markdown_extensions:
   - admonition
   - attr_list
   - md_in_html
+  - pymdownx.arithmatex:
+     generic: true
   - pymdownx.snippets:
       base_path:
         - docs/includes
@@ -43,6 +45,8 @@ extra_javascript:
   - js/header-social.js
   - js/analytics-config.js
   - js/site-analytics.js
+  - js/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
 
 extra:
   generator: false
