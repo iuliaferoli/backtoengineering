@@ -83,8 +83,6 @@ nav:
     - CUDA Basics: topics/cuda-basics.md
     - Data Fundamentals: topics/data-fundamentals.md
     - ROS 2 Basics: topics/ros2-basics.md
-  - Data Science:
-    - Statistics & Modelling: topics/statistics-modelling.md
   - AI & ML:
     - ML Fundamentals: topics/ml-fundamentals.md
     - Neural Networks: topics/neural-networks.md

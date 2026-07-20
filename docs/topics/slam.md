@@ -4,7 +4,7 @@ title: "SLAM"
 type: topic
 category: ai-ml
 tree_icon: map-2
-prerequisites: [computer-vision, statistics-modelling]
+prerequisites: [computer-vision, ml-fundamentals]
 ---
 
 # SLAM (Simultaneous Localization and Mapping)

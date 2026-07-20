@@ -6,7 +6,6 @@ category: data-science
 tree_icon: database
 videos:
   - https://youtu.be/oCoAj6QtZPc
-  - https://youtu.be/ppNU_1ONsIM
 prerequisites: [python-basics]
 group: data-science
 ---

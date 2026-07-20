@@ -4,7 +4,7 @@ title: "ML Fundamentals"
 type: topic
 category: data-science
 tree_icon: chart-dots
-prerequisites: [statistics-modelling]
+prerequisites: [data-fundamentals]
 videos:
     - https://youtu.be/ppNU_1ONsIM
 group: data-science

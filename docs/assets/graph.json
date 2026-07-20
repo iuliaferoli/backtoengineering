@@ -25,7 +25,7 @@
         "group": "agentic-AI",
         "blurb": "Agents that use tools, and the Model Context Protocol that connects them to the world.",
         "videoCount": 1,
-        "tier": 12,
+        "tier": 11,
         "prereqCount": 1,
         "url": "topics/ai-agents/"
       }
@@ -70,7 +70,7 @@
         "group": "data-science",
         "blurb": "Cameras, OpenCV, CNNs: turning pixels into decisions.",
         "videoCount": 0,
-        "tier": 9,
+        "tier": 8,
         "prereqCount": 1,
         "url": "topics/computer-vision/"
       }
@@ -128,8 +128,8 @@
         "category": "data-science",
         "icon": "database",
         "group": "data-science",
-        "blurb": "Data structures, cleaning messy data, and the algorithms that process it.",
-        "videoCount": 2,
+        "blurb": "Every model you will ever train sits on top of data. Before you can predict anything, classify anything, or teach a robot anything, you need to understand what data actually is, what shape it comes in, and whether the da\u2026",
+        "videoCount": 1,
         "tier": 5,
         "prereqCount": 1,
         "url": "topics/data-fundamentals/"
@@ -145,7 +145,7 @@
         "group": "nvidia-ecosystem",
         "blurb": "NVIDIA DeepStream SDK is a framework for building AI-powered video analytics applications with optimized multi-stream processing.",
         "videoCount": 0,
-        "tier": 11,
+        "tier": 10,
         "prereqCount": 2,
         "url": "topics/deepstream/"
       }
@@ -205,7 +205,7 @@
         "group": "agentic-AI",
         "blurb": "Large language models: prompting, context windows, and their limits.",
         "videoCount": 1,
-        "tier": 10,
+        "tier": 9,
         "prereqCount": 1,
         "url": "topics/llms/"
       }
@@ -233,9 +233,9 @@
         "category": "data-science",
         "icon": "chart-dots",
         "group": "data-science",
-        "blurb": "Regression, classification, and training/validation/test splits: learning from data properly.",
-        "videoCount": 0,
-        "tier": 7,
+        "blurb": "Data on its own only tells you what already happened. A model is how you get something you did not already know from a table. This page covers what a machine learning model is, how you train and test one, and the main fa\u2026",
+        "videoCount": 1,
+        "tier": 6,
         "prereqCount": 1,
         "url": "topics/ml-fundamentals/"
       }
@@ -250,7 +250,7 @@
         "group": "data-science",
         "blurb": "From perceptrons to CNNs: the architecture behind modern AI.",
         "videoCount": 0,
-        "tier": 8,
+        "tier": 7,
         "prereqCount": 1,
         "url": "topics/neural-networks/"
       }
@@ -265,7 +265,7 @@
         "group": "data-science",
         "blurb": "From tokens to transformers: how machines process language.",
         "videoCount": 0,
-        "tier": 9,
+        "tier": 8,
         "prereqCount": 1,
         "url": "topics/nlp/"
       }
@@ -340,7 +340,7 @@
         "group": "agentic-AI",
         "blurb": "RAG = retrieval-augmented generation",
         "videoCount": 1,
-        "tier": 11,
+        "tier": 10,
         "prereqCount": 1,
         "url": "topics/rag/"
       }
@@ -415,7 +415,7 @@
         "group": null,
         "blurb": "SLAM enables robots to build a map of an unknown environment while simultaneously tracking their location within it.",
         "videoCount": 0,
-        "tier": 10,
+        "tier": 9,
         "prereqCount": 2,
         "url": "topics/slam/"
       }
@@ -437,21 +437,6 @@
     },
     {
       "data": {
-        "id": "statistics-modelling",
-        "label": "Statistics & Modelling",
-        "type": "topic",
-        "category": "data-science",
-        "icon": "chart-histogram",
-        "group": "data-science",
-        "blurb": "Hypotheses, models, and knowing when your data is lying to you.",
-        "videoCount": 0,
-        "tier": 6,
-        "prereqCount": 1,
-        "url": "topics/statistics-modelling/"
-      }
-    },
-    {
-      "data": {
         "id": "tensorrt",
         "label": "TensorRT Optimization",
         "type": "topic",
@@ -460,7 +445,7 @@
         "group": "nvidia-ecosystem",
         "blurb": "NVIDIA TensorRT is a high-performance deep learning inference optimizer and runtime for production deployment.",
         "videoCount": 0,
-        "tier": 10,
+        "tier": 9,
         "prereqCount": 1,
         "url": "topics/tensorrt/"
       }
@@ -475,7 +460,7 @@
         "group": "data-science",
         "blurb": "Multidimensional arrays of numbers. Think scalar, vector, matrix, then tensors!",
         "videoCount": 2,
-        "tier": 9,
+        "tier": 8,
         "prereqCount": 2,
         "url": "topics/tensors/"
       }
@@ -490,7 +475,7 @@
         "group": null,
         "blurb": "Vision-Language-Action models: where AI meets physical robots.",
         "videoCount": 0,
-        "tier": 11,
+        "tier": 10,
         "prereqCount": 2,
         "url": "topics/vla/"
       }
@@ -520,7 +505,7 @@
         "group": null,
         "blurb": "Build an open-source AI-powered mini robot based on the Open Duck platform - a mobile robot with vision and language capabilities.",
         "videoCount": 1,
-        "tier": 13,
+        "tier": 12,
         "prereqCount": 4,
         "url": "projects/open-duck/"
       }
@@ -550,7 +535,7 @@
         "group": null,
         "blurb": "Build a self-driving car capable of lane detection, obstacle avoidance, and autonomous navigation using computer vision and SLAM. There are levels of difficulty and complexity you can choose from. For example, you can st\u2026",
         "videoCount": 1,
-        "tier": 11,
+        "tier": 10,
         "prereqCount": 4,
         "url": "projects/robot-car/"
       }
@@ -595,7 +580,7 @@
         "group": null,
         "blurb": "Manipulation driven by learned policies: teleoperate the SO-101 arm, collect demonstration datasets, train imitation-learning policies, and run them on real hardware.",
         "videoCount": 1,
-        "tier": 12,
+        "tier": 11,
         "prereqCount": 1,
         "url": "projects/so101/"
       }
@@ -700,7 +685,7 @@
     },
     {
       "data": {
-        "source": "statistics-modelling",
+        "source": "data-fundamentals",
         "target": "ml-fundamentals"
       }
     },
@@ -790,7 +775,7 @@
     },
     {
       "data": {
-        "source": "statistics-modelling",
+        "source": "ml-fundamentals",
         "target": "slam"
       }
     },
@@ -798,12 +783,6 @@
       "data": {
         "source": "mechanical-fundamentals",
         "target": "soldering"
-      }
-    },
-    {
-      "data": {
-        "source": "data-fundamentals",
-        "target": "statistics-modelling"
       }
     },
     {
