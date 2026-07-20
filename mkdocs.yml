@@ -81,9 +81,9 @@ nav:
     - C++ Basics: topics/cpp-basics.md
     - CPU Basics: topics/GPU.md
     - CUDA Basics: topics/cuda-basics.md
-    - Data Fundamentals: topics/data-fundamentals.md
     - ROS 2 Basics: topics/ros2-basics.md
   - AI & ML:
+    - Data Fundamentals: topics/data-fundamentals.md
     - ML Fundamentals: topics/ml-fundamentals.md
     - Neural Networks: topics/neural-networks.md
     - Computer Vision: topics/computer-vision.md
