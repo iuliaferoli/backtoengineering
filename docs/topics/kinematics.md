@@ -69,7 +69,7 @@ Manually writing a transform per joint gets messy fast, so manipulators are conv
 | Link length | \(a_i\) | distance between joint axes \(i-1\) and \(i\), along their common perpendicular |
 | Link twist | \(\alpha_i\) | angle between joint axes \(i-1\) and \(i\) |
 | Link offset | \(d_i\) | distance along joint axis \(i-1\) to the common perpendicular |
-| Joint angle | \(\theta_i\) | rotation about joint axis \(i-1\) — **this is your control input** for a revolute joint |
+| Joint angle | \(\theta_i\) | rotation about joint axis \(i-1\),  **this is your control input** for a revolute joint |
 
 The standard DH transform from frame \(i-1\) to frame \(i\) is:
 
