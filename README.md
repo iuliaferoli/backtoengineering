@@ -26,7 +26,7 @@ By the end, you'll understand the full stack: from servo control to vision-langu
 
 ## Featured Project
 
-Check out the [Robot Arm Project](projects/robot-arm.md) to see the full journey: 7 episodes from scratch-built cardboard prototypes to AI-powered LeRobot arms trained on custom datasets.
+Check out the [Robot Arm Project](https://www.backtoengineering.com/projects/robot-arm/) to see the full journey: 7 episodes from scratch-built cardboard prototypes to AI-powered LeRobot arms trained on custom datasets.
 
 ---
 
