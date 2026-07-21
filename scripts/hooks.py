@@ -12,12 +12,17 @@ Add to any page's frontmatter:
         alt: Short description of the image
         caption: Optional caption shown below the image
 
+    contributors:
+      - username: github-user
+        url: https://github.com/github-user
+        pr: https://github.com/owner/repo/pull/123
+
 Players render wherever the page body contains the marker
 `<!-- videos -->`; without a marker they appear in a "Watch"
 section appended at the end. Images render at `<!-- images -->`;
 without a marker they appear in an "Images" section appended after
-the page body. Non-YouTube URLs render as plain links. The single
-`video:` and `image:` keys also work.
+the page body. Contributors render near the bottom of the page. Non-YouTube URLs
+render as plain links. The single `video:` and `image:` keys also work.
 
 Registered in mkdocs.yml via:  hooks: [scripts/hooks.py]
 """
@@ -86,6 +91,86 @@ def _tree_link_block(page) -> str:
         f'href="/?node={page_id}" '
         f'data-umami-event="See in tree" '
         f'data-umami-event-node="{page_id}">See in tree &rarr;</a></p>\n'
+    )
+
+
+def _pr_label(url: str) -> str:
+    parsed = urlparse(url)
+    parts = [part for part in parsed.path.split("/") if part]
+    if len(parts) >= 4 and parts[-2] == "pull":
+        return f"PR #{parts[-1]}"
+    return "PR"
+
+
+def _contributor_name(contributor) -> str:
+    if isinstance(contributor, str):
+        return contributor.lstrip("@")
+    if isinstance(contributor, dict):
+        return str(
+            contributor.get("username")
+            or contributor.get("github")
+            or contributor.get("name")
+            or ""
+        ).lstrip("@")
+    return ""
+
+
+def _contributor_url(contributor, username: str) -> str:
+    if isinstance(contributor, dict):
+        url = contributor.get("url") or contributor.get("profile")
+        if url:
+            return str(url)
+    return f"https://github.com/{username}" if username else ""
+
+
+def _contributor_pr(contributor) -> str:
+    if isinstance(contributor, dict):
+        return str(contributor.get("pr") or contributor.get("pull_request") or "")
+    return ""
+
+
+def _contributors_block(contributors) -> str:
+    if isinstance(contributors, (str, dict)):
+        contributors = [contributors]
+    if not isinstance(contributors, list):
+        return ""
+
+    links = []
+    for contributor in contributors:
+        username = _contributor_name(contributor)
+        if not username:
+            continue
+        url = _contributor_url(contributor, username)
+        pr_url = _contributor_pr(contributor)
+        name_html = escape(username)
+        if url:
+            person = (
+                f'<a class="contributor-link" href="{escape(url, quote=True)}" '
+                f'data-umami-event="Contributor profile" '
+                f'data-umami-event-contributor="{escape(username, quote=True)}">'
+                f'@{name_html}</a>'
+            )
+        else:
+            person = f'<span class="contributor-link">@{name_html}</span>'
+        if pr_url:
+            pr = (
+                f'<a class="contributor-pr" href="{escape(pr_url, quote=True)}" '
+                f'data-umami-event="Contributor PR" '
+                f'data-umami-event-contributor="{escape(username, quote=True)}">'
+                f'{escape(_pr_label(pr_url))}</a>'
+            )
+            person += pr
+        links.append(person)
+
+    if not links:
+        return ""
+
+    return (
+        '<div class="contributor-callout">'
+        '<span class="contributor-label">Contributed by</span>'
+        '<span class="contributor-list">'
+        + "".join(links)
+        + "</span></div>"
     )
 
 
@@ -176,4 +261,7 @@ def on_page_markdown(markdown, page, config, files):
             markdown = markdown.replace(marker, block)
         elif block:
             markdown = markdown + "\n\n## Images\n\n" + block
+    contributors = _contributors_block(meta.get("contributors"))
+    if contributors:
+        markdown += "\n\n" + contributors + "\n"
     return markdown + _tree_link_block(page) + _next_nodes_block(page)

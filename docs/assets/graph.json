@@ -188,7 +188,7 @@
         "category": "ai-ml",
         "icon": "angle",
         "group": null,
-        "blurb": "Kinematics studies the motion of robot manipulators without considering forces, covering forward and inverse kinematics for position control.",
+        "blurb": "Kinematics studies the motion (position, velocity, orientation) of robot manipulators **without** considering forces that cause it.",
         "videoCount": 0,
         "tier": 5,
         "prereqCount": 2,

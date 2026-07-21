@@ -59,6 +59,10 @@ uv run mkdocs serve                    # live preview at http://127.0.0.1:8000
    tree_icon: map-2               # Tabler icon name (tabler.io/icons), optional
    prerequisites: [ros2-basics, linear-algebra]
    video: https://youtu.be/...    # optional, counted on the node card
+   contributors:                  # optional, renders a "Contributed by" callout
+     - username: github-user
+       url: https://github.com/github-user
+       pr: https://github.com/owner/repo/pull/123
    ---
    ```
 

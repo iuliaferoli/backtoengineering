@@ -5,6 +5,10 @@ type: topic
 category: ai-ml
 tree_icon: angle
 prerequisites: [mechanical-fundamentals, python-basics]
+contributors:
+  - username: sunkmechie
+    url: https://github.com/sunkmechie
+    pr: https://github.com/iuliaferoli/backtoengineering/pull/8
 ---
 
 # Robot Kinematics
@@ -269,4 +273,3 @@ You will very rarely hand-code IK for a real arm in production, the actual produ
 - [MoveIt 2 Kinematics documentation](https://moveit.picknik.ai/main/doc/examples/kinematics/kinematics_tutorial.html)
 - [Buss, Introduction to Inverse Kinematics (PDF)](https://www.math.ucsd.edu/~sbuss/ResearchWeb/ikmethods/iksurvey.pdf)
 - [Modern Robotics: Mechanics, Planning, and Control (free textbook + video lectures)](https://hades.mech.northwestern.edu/index.php/Modern_Robotics)
-
