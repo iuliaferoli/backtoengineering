@@ -214,7 +214,7 @@ A common mistake: sending someone an STL when they need to *edit* the design. ST
 
 ## References
 
-- ASME Y14.5-2018. *Dimensioning and Tolerancing.* The governing GD&T standard referenced above.
+- ASME Y14.5-2018. *Dimensioning and Tolerancing.* 
 - Drake, S. *Dimensioning and Tolerancing Handbook.* McGraw-Hill, practical reference for tolerance stack-up methods (worst-case vs. RSS).
 - Shigley, J.E., Mischke, C.R., & Budynas, R.G. *Shigley's Mechanical Engineering Design.* McGraw-Hill. [**GOD-TIER BOOK FOR EVERY STUDENT/PRACTICING ENGINEER**]
 
