@@ -8,7 +8,7 @@ prerequisites: [3d-printing]
 contributors:
   - username: sunkmechie
     url: https://github.com/sunkmechie
-    pr: https://github.com/iuliaferoli/backtoengineering/pull/
+    pr: https://github.com/iuliaferoli/backtoengineering/pull/11
 ---
 
 # CAD
